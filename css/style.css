@@ -3,18 +3,19 @@
 
 body, html { margin: 0; padding: 0; min-width: 320px; max-width: 1440px; min-height: 100%; position: relative;
 	background: #eee; }
-body { font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; color: #555; font-weight: 200;
+body { font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; color: #555; font-weight: 200;
 	font-size: 18px; line-height: 26px; }
 
 a { color: #17708d; font-weight: 400; text-decoration: none; transition: color 0.2s; }
 a:visited { color: #4E488D; }
 a:hover, a:focus { color: #000; text-decoration: none; }
 
-h1, h2, h3 { margin: 0 0 20px 0; font-weight: 700; font-family: 'Roboto Condensed', serif; color: #444; }
+h1, h2, h3, h4, h5, h6 { font-weight: 700; font-family: 'Roboto Condensed', 'Helvetica Neue', 'Helvetica', 'Arial', serif; }
+h1, h2, h3 { margin: 0 0 20px 0; color: #444; }
 h1 a { font-weight: 700; text-decoration: none; color: #444; }
 h1 a:visited { color: #444; }
 h1 a:hover, h1 a:focus { color: #000; }
-h4, h5, h6 { font-weight: 400; margin: 0 0 10px 0; }
+h4, h5, h6 { margin: 0 0 10px 0; }
 p { margin: 0 0 20px 0; }
 h1 { font-size: 46px; line-height: 52px; text-shadow: 0 1px 0 rgba(255,255,255,0.8); }
 h2 { font-size: 38px; line-height: 44px; }
