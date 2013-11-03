@@ -27,7 +27,7 @@ h6 { font-size: 18px; line-height: 24px; }
 #sidebar a:hover, #sidebar a:focus { color: #fff; }
 #sidebar h1, #sidebar h2, #sidebar h3 { text-shadow: 0 1px 1px rgba(0,0,0,0.8); }
 #sidebar h1 { margin: 0; }
-#sidebar h1 a { font-size: 38px; line-height: 46px; letter-spacing: 1px; color: #e3e3e3; font-weight: 400; }
+#sidebar h1 a { font-size: 38px; line-height: 46px; letter-spacing: 1px; color: #e9e9e9; font-weight: 400; }
 #sidebar h2 a { font-size: 24px; line-height: 28px; font-weight: 400; }
 #sidebar p { font-size: 16px; line-height: 22px; margin-bottom: 5px; }
 
