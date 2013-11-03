@@ -22,7 +22,7 @@ h6 { font-size: 18px; line-height: 24px; }
 
 /* sidebar */
 #sidebar { text-align: center; background: #1d4552 url('/images/bg.png') 0 0 repeat; color: #ddd;
-	padding: 10px 0 30px; }
+	padding: 10px 0 30px; box-shadow: inset -10px 0 10px rgba(0,0,0,0.1); }
 #sidebar a { color: #ddd; font-weight: 400; text-decoration: none; }
 #sidebar a:hover, #sidebar a:focus { color: #fff; }
 #sidebar h1, #sidebar h2, #sidebar h3 { text-shadow: 0 1px 1px rgba(0,0,0,0.8); }
