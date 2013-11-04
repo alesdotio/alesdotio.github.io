@@ -4,18 +4,18 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>{{ page.title }}</title>
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="/css/syntax.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	{% include analytics.html %}
 </head>
 <body>
+	<div id="top"></div>
 	<div id="sidebar">
 		{% include sidebar.html %}
 	</div>
 	<div id="main" class="clearfix">
 		{{ content }}
+		<a href="#top" class="link-top"><span class="fa fa-arrow-circle-up"></span></a>
 	</div>
 </body>
 </html>
