@@ -7,7 +7,7 @@ categories: ember django
 
 With everyone wanting more ambitious web applications, with complex UIs, quick response times and mind-blowing features, the challenge for developers to build such websites has become greater and greater. Luckily, we as [lazy developers](http://developerexcuses.com/), have some great tools to make our lives easier. In the last years, a whole new set of tools has emerged, that make developing complex and dynamic websites a breeze. In this blog post I will try to demonstrate how easy it is to build such a web app from scratch, using [Django](https://www.djangoproject.com/) and [Ember.js](http://emberjs.com/).
 
-In this tutorial we will be creating a simple interactive task list, similar to [TodoMVC](http://todomvc.com/). If you are new to Django or Ember.js, do not fear, they both have great documentation on their website. You should be able to follow this tutorial with only some basic Javascript, and Python knowledge. If you would like to skip all the jabber, the final code is [available on github]().
+In this tutorial we will be creating the django backend for the [TodoMVC](http://todomvc.com/) application. If you are new to Django or Ember.js, do not fear, they both have great documentation on their website. You should be able to follow this tutorial with only some basic Javascript, and Python knowledge. If you would like to skip all the jabber, the final code is [available on github](http://www.github.com/alesdotio).
 
 Please note that the code used in this tutorial might not suitable for production use, it merely serves for demonstration purposes.
 
@@ -120,7 +120,7 @@ As you can see, we receive a 403-forbidden error, which means our custom permiss
 And with this, we are finished with the backend implementation! That's right, we have a RESTful API complete with authentication and browse-able interface, which we used to add some data. Well that was easy, wasn't it? Let's look at what we need to do in the fronted next.
 
 
-## Template
+## Frontend
 
 The only template we need is home.html, which we serve at the root of our app. This template needs to contain all the scripts and all the handlebars templates Ember will render.
 
@@ -140,7 +140,7 @@ Let's start with the basic HTML and including all the requirements. BTW, I highl
 </html>
 {% endhighlight %}
 
-These are all pretty standard Ember requirements, except for the last one. And that is where the magic happens. [Ember-data-django-rest-adapter](https://github.com/toranb/ember-data-django-rest-adapter/)
+These are all pretty standard Ember requirements, except for the last one. And that is where all the magic happens. [Ember-data-django-rest-adapter](https://github.com/toranb/ember-data-django-rest-adapter/) allows us to use Django REST framework's generic views together with Ember data, without writing a line of code. The whole communication between the backend and frontend is completely covered and we don't have to worry about it at all. Magic!
 
 
 Next, let's add the root Ember template.
@@ -153,7 +153,7 @@ Next, let's add the root Ember template.
 {{ "{% endverbatim" }} %}
 {% endhighlight %}
 
-There is one small caveat with using django and handlebars. Handlebars templates use ``{{ "{% " }}`` and ``{{ "{{" }}`` tags which clash with the Django templates syntax. Since handlebars does not have a setting to change those tags, our only options to work around this are:
+There is one small caveat with using Django together with Handlebars. Handlebars templates use ``{{ "{{" }}`` tags which clash with the Django templates syntax. Since handlebars does not have a setting to change those tags, our only options (as far as I know) to work around this are:
  * wrap all handlebars templates in Django's ``{{ "{% verbatim" }} %}`` ``{{ "{% endverbatim " }} %}`` tags or
  * use a custom template tag that includes templates without running them through Django first (for example, [this one](https://github.com/niwibe/django-rawinclude) or simply [this one](https://gist.github.com/HenrikJoreteg/742160)).
 
@@ -164,6 +164,10 @@ There is one small caveat with using django and handlebars. Handlebars templates
 
 
 
-## Github
+## Final thoughts
 
-The source code used in this tutorial is available on github at []().
+Although this tutorial only covers the basics of working with Ember and Django, I think it provides a solid base for real-life solutions as well. I can attest to that by having build a few for customers at my favourite web agency [Divio](http://www.divio.ch) and at my startup [LiveSystems](http://www.livesystems.info).
+
+Was this blog post useful to you? Should I do more of these? If you have any feedback, or want to air your opinion about the subject, feel free to drop me an email.
+
+The complete source code used in this tutorial is available on Github at [www.github.com/alesdotio](http://www.github.com/alesdotio). You can fork, share, do whatever you want with it. Cheers!
