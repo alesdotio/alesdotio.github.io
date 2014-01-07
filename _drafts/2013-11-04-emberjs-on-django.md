@@ -2,7 +2,6 @@
 layout: post
 title: "Simple interactive Ember.js web application on Django"
 date: 2013-11-04
-categories: ember django
 ---
 
 With everyone wanting more ambitious web applications, with complex UIs, quick response times and mind-blowing features, the challenge for developers to build such websites has become greater and greater. Luckily, we as [lazy developers](http://developerexcuses.com/), have some great tools to make our lives easier. In the last years, a whole new set of tools has emerged, that make developing complex and dynamic websites a breeze. In this blog post I will try to demonstrate how easy it is to build such a web app from scratch, using [Django](https://www.djangoproject.com/) and [Ember.js](http://emberjs.com/).

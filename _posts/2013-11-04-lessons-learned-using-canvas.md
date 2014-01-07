@@ -2,7 +2,6 @@
 layout: post
 title: "Lessons learned by using HTML5 Canvas"
 date: 2013-11-04
-categories: html5
 ---
 
 Recently I had the opportunity to work on a project that makes heavy use of Canvas for drawing and manipulating huge amounts of objects. Being my first time using the technology, and not knowing much about it, I had to overcome issues that in retrospect seem pretty obvious. Here is a list of things I learned or wish I knew before starting.

@@ -2,7 +2,6 @@
 layout: post
 title: "My first blog post!"
 date: 2013-11-03
-categories: 
 ---
 
 This is just my first blog post to test jekyll, please ignore. Link to [my github](http://www.github.com/alesdotio).

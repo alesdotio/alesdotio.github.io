@@ -2,7 +2,6 @@
 layout: post
 title: "Neat CSS tricks"
 date: 2013-11-04
-categories: css
 ---
 
 
