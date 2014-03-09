@@ -12,10 +12,10 @@ a {
 	&:hover, &:focus { color: #000; text-decoration: none; }
 }
 
-h1, h2, h3, h4, h5, h6 { font-weight: 700; font-family: 'Roboto Condensed', 'Helvetica Neue', 'Helvetica', 'Arial', serif; color: #444; }
+h1, h2, h3, h4, h5, h6 { font-weight: 700; font-family: 'Roboto Condensed', 'Helvetica Neue', 'Helvetica', 'Arial', serif; color: #333; }
 h1, h2, h3 { margin: 0 0 20px 0; }
-h1 a { font-weight: 700; text-decoration: none; color: #444; }
-h1 a:visited { color: #444; }
+h1 a { font-weight: 700; text-decoration: none; color: #333; }
+h1 a:visited { color: #333; }
 h1 a:hover, h1 a:focus { color: #000; }
 h4, h5, h6 { margin: 0 0 10px 0; }
 p { margin: 0 0 20px 0; }
@@ -59,6 +59,7 @@ h6 { font-size: 18px; line-height: 24px; }
 		li { display: inline-block; vertical-align: middle; }
 		.avatar {
 			display: block; width: 30px; height: 30px; margin: 7px; border-radius: 20px;
+			border: 1px solid #000;
 			&::before { box-shadow: 0 1px 1px rgba(255,255,255,0.3), inset 0 1px 1px rgba(0,0,0,0.8); }
 			&:hover { width: 40px; height: 40px; margin: 2px; }
 		}
@@ -68,7 +69,7 @@ h6 { font-size: 18px; line-height: 24px; }
 /* main */
 #main {
 	padding: 20px 20px 0;
-	img { display: block; margin: 0 auto; max-width: 100%; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+	img { display: block; margin: 0 auto; max-width: 100%; box-shadow: 0 0 20px rgba(0,0,0,0.2); }
 }
 
 code { display: inline-block; font-size: 16px; line-height: 20px; background: #fff; border: 1px solid #ddd; padding: 2px 5px; }
@@ -87,6 +88,11 @@ pre code { display: block; margin: 15px 0 20px 0; overflow: auto; padding: 10px;
 .post .date { font-size: 14px; line-height: 16px; margin: 0; color: #888; }
 .post .read-more { float: right; margin: -10px 0 10px 0; font-size: 16px; }
 .posts .post { border-bottom: 1px solid #ddd; margin-bottom: 50px; }
+
+/* custom */
+
+.image { max-width: 800px; max-height: 600px; }
+.text-tiny { font-size: 10px; line-height: 12px; vertical-align: top; }
 
 /* tablet */
 @media (min-width: 480px) {
