@@ -33,25 +33,25 @@ So here is the recipe for a home-baked MacBook Pro:
 
 ##### Preparation
 
-1. Take out all the screws and throw them in the same pile (for easier access later). You should be left with only the faulty component: the logic board.
+* Take out all the screws and throw them in the same pile (for easier access later). You should be left with only the faulty component: the logic board.
 
 <img class="image" src="{{ site.url }}/media/how-to-bake-a-mac/logic-board.jpg" alt="logic board" title="on the table" />
 
-2. Take the logic board and place it on little legs made out of aluminum foil. Place the Frankenstein's-monster-robot on a baking tray.
+* Take the logic board and place it on little legs made out of aluminum foil. Place the Frankenstein's-monster-robot on a baking tray.
 
 <img class="image" src="{{ site.url }}/media/how-to-bake-a-mac/tray.jpg" alt="on the tray" title="on the tray" />
 
-3. Shove the tray in a preheated oven at **170&deg; Celsius**. For a perfectly golden and crunchy crust make sure you leave it in there for **precisely around 7 minutes**. Note: this voids the warranty.
+* Shove the tray in a preheated oven at **170&deg; Celsius**. For a perfectly golden and crunchy crust make sure you leave it in there for **precisely around 7 minutes**. Note: this voids the warranty.
 
 <img class="image" src="{{ site.url }}/media/how-to-bake-a-mac/oven.jpg" alt="in the oven" title="in the oven" />
 
-4. Stare nervously at your expensive piece of machinery slowly roasting, only breaking eye contact every 10-20 seconds to check your watch for the time.
+* Stare nervously at your expensive piece of machinery slowly roasting, only breaking eye contact every 10-20 seconds to check your watch for the time.
 
-5. Take out the device using an oven mitten (important!) and let it cool off. If you are religious in any way, this is the moment to do your thing.
+* Take out the device using an oven mitten (important!) and let it cool off. If you are religious in any way, this is the moment to do your thing.
 
 <img class="image" src="{{ site.url }}/media/how-to-bake-a-mac/wait.jpg" alt="in progress" title="in progress" />
 
-6. Place all the pieces back into the it's aluminium body (except for that one screw) and watch as your beloved companion is raised from the dead!
+* Place all the pieces back into the it's aluminium body (except for that one screw) and watch as your beloved companion is raised from the dead!
 
 <img class="image" src="{{ site.url }}/media/how-to-bake-a-mac/moment.jpg" alt="in the hands of fate" title="in the hands of fate" />
 
@@ -61,3 +61,6 @@ So here is the recipe for a home-baked MacBook Pro:
 
 
 **Disclaimer**: Although I have not yet experienced this myself, it is known that Zombie-like behaviour might develop and your friend might relapse back into an unusable state. Following the procedure again might help in some cases, but the fix is mostly temporary. Your best bet is to buy yourself a new one. Also, I am obviously not responsible for anyone trying this and burning their house down or worse. Cheers!
+
+
+**Why does it work?** Check out the [discussion on HackerNews](https://news.ycombinator.com/item?id=7371908).
