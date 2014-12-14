@@ -1,0 +1,44 @@
+.post-item {
+	margin-bottom: @line-height-computed * 2;
+}
+
+.post-date {
+	margin: 0;
+	font-size: @font-size-small;
+	color: @color-text-muted;
+}
+
+.post-title {
+	margin-top: 0;
+}
+
+.post {
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto @line-height-computed auto;
+	}
+	a {
+		text-decoration: underline;
+	}
+}
+
+code {
+	display: inline-block;
+	font-size: 16px;
+	background: @color-subtle;
+	padding: 2px 5px;
+}
+
+pre code {
+	display: block;
+	line-height: 20px;
+	margin: 0 0 @line-height-computed 0;
+	overflow: auto;
+	padding: (@gutter-size / 2);
+}
+
+.highlight pre {
+	margin: 0;
+}

@@ -2,8 +2,8 @@
 layout: post
 title: "How I resurrected my MacBook Pro by putting it in the oven"
 date: 2014-03-09
+picture: "/media/how-to-bake-a-mac/header-bsod.jpg"
 ---
-
 
 One late night I opened up my trusty MacBook Pro only to find it turned off. "That's odd, I never turn it off. Must have ran out of battery or something". Without a further thought, I pressed the power button and the computer promptly started booting up. Since I had an SSD, this process would only take a few moments... but not this time. This time it got stuck in the "gray screen with slightly darker gray Apple logo phase".
 

@@ -1,12 +1,18 @@
 ---
-layout: default
+layout: base
 ---
 
-<article class="post">
-	<a href="/" class="link-back" title="back"><span class="fa fa-arrow-circle-left"></span></a>
-	<p class="date">{{ page.date | date_to_string }}</p>
-	<h1 class="title">{{ page.title }}</h1>
-	<div class="content clearfix">
-		{{ content }}
+<header class="header"{% if page.picture %} style="background-image: url('{{ site.url }}{{ page.picture }}');"{% endif %}>
+	{% include header.html %}
+	<div class="header-content container">
+		<a href="/" class="header-link-back" title="Go back"><span class="fa fa-arrow-circle-left"></span></a>
+		<p class="header-date">{{ page.date | date_to_string }}</p>
+		<h1 class="header-title">{{ page.title }}</h1>
 	</div>
-</article>
+</header>
+
+<div class="container">
+	<article class="post">
+		{{ content }}
+	</article>
+</div>
