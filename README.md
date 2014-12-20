@@ -3,12 +3,15 @@ ales.io
 
 http://ales.io
 
-Run with
+Install requirements
 
     sudo gem install jekyll
+    npm install
+
+Run with
+
     jekyll serve --watch
 
-Compile CSS with
+Compile to CSS with
 
-    npm install -g less
-    lessc -x --yui-compress less/style.less > css/style.css
+    grunt watch

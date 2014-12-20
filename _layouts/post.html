@@ -1,12 +1,29 @@
 ---
-layout: default
+layout: base
 ---
 
-<article class="post">
-	<a href="/" class="link-back" title="back"><span class="fa fa-arrow-circle-left"></span></a>
-	<p class="date">{{ page.date | date_to_string }}</p>
-	<h1 class="title">{{ page.title }}</h1>
-	<div class="content clearfix">
-		{{ content }}
+<header class="header"{% if page.picture %} style="background-image: url('{{ site.url }}{{ page.picture }}');"{% endif %}>
+	{% include header_gradients.html %}
+	<div class="header-content container">
+		{% include identity_inline.html %}
 	</div>
-</article>
+	<div class="header-content header-content-bottom">
+		<div class="container">
+			<p class="header-date">{{ page.date | date_to_string }}</p>
+			<h1 class="header-title">{{ page.title }}</h1>
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<article class="post">
+		{{ content }}
+	</article>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div><a href="{{ site.url }}" class="btn footer-read-more">Read more posts</a></div>
+		{% include footer.html %}
+	</div>
+</footer>

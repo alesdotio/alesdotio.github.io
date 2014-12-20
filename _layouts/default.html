@@ -1,21 +1,22 @@
-<!doctype html><html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>{{ page.title }}</title>
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
-	{% include analytics.html %}
-</head>
-<body>
-	<div id="top"></div>
-	<div id="sidebar">
-		{% include sidebar.html %}
+---
+layout: base
+---
+
+
+<header class="header header-large">
+	{% include header_gradients.html %}
+	<div class="header-content container">
+		{% include identity.html %}
 	</div>
-	<div id="main" class="clearfix">
-		{{ content }}
-		<a href="#top" class="link-top" title="top"><span class="fa fa-arrow-circle-up"></span></a>
+	{% include connect.html %}
+</header>
+
+<div class="container">
+	{{ content }}
+</div>
+
+<footer class="footer">
+	<div class="container">
+		{% include footer.html %}
 	</div>
-</body>
-</html>
+</footer>

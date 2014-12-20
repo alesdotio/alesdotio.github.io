@@ -110,11 +110,11 @@ class TaskDetailView(generics.RetrieveUpdateDestroyAPIView):
 
 At this point we can run our app with ``python manage.py runserver``, and visit localhost:8000/api/tasks/. We will be presented with the awesome browse-able Django REST framework interface.
 
-![django rest framework interface 1]({{ site.url }}/media/django-rest-framework-01.png)
+![django rest framework interface 1]({{ site.url }}media/django-rest-framework-01.png)
 
 As you can see, we receive a 403-forbidden error, which means our custom permission class works! After we log in through the admin interface at localhost:8000/admin/, we can try visiting the API again, and will be presented with an empty list of tasks. Using the interface, let's add some.
 
-![django rest framework interface 2]({{ site.url }}/media/django-rest-framework-02.png)
+![django rest framework interface 2]({{ site.url }}media/django-rest-framework-02.png)
 
 And with this, we are finished with the backend implementation! That's right, we have a RESTful API complete with authentication and browse-able interface, which we used to add some data. Well that was easy, wasn't it? Let's look at what we need to do in the fronted next.
 
