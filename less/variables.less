@@ -4,6 +4,7 @@
 
 @color-orange:           #e95b58;
 @color-blue:             #134c62;
+@color-blue-light:       lighten(@color-link, 20%);
 @color-green:            #288a08;
 
 @color-primary:          @color-blue;
@@ -14,10 +15,10 @@
 @color-text-muted:       mix(#ddd, @color-primary, 50%);
 
 @color-link:             @color-primary;
-@color-link-hover:       lighten(@color-link, 20%);
+@color-link-hover:       @color-blue-light;
 
 
-@color-header-bg: #22242f;//#2e2f35;
+@color-header-bg:        #22242f;//#2e2f35;
 @color-header:           #fff;
 @color-header-text:      mix(#fff, @color-header-bg, 70%);
 

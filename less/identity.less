@@ -1,20 +1,14 @@
 .identity-name {
-	margin: 0;
-	.header-name-a {
+	font-size: 42px;
+	margin: 0 0 @line-height-computed 0;
+	@media (min-width: @screen-tablet) {
+		font-size: 88px;
+		margin-bottom: @line-height-computed * 2;
+	}
+	.identity-name-a {
 		color: #fff;
 		font-weight: 300;
 		text-transform: uppercase;
-	}
-}
-
-.header-large {
-	.identity-name {
-		font-size: @font-size-h1;
-		margin: 0 0 @line-height-computed 0;
-		@media (min-width: @screen-tablet) {
-			font-size: @font-size-h1 + 46;
-			margin-bottom: @line-height-computed * 2;
-		}
 	}
 }
 
@@ -33,10 +27,10 @@
 
 .identity-nickname {
 	margin: 0 0 (@line-height-computed / 2) 0;
+	font-size: 30px;
 	.identity-nickname-a {
 		color: #fff;
 		font-weight: 300;
-		font-size: @font-size-h3;
 	}
 }
 
@@ -46,15 +40,9 @@
 	}
 }
 
-
 .identity-connect {
-	position: absolute;
-	z-index: 10;
-	bottom: (@line-height-computed / 2);
-	left: 0;
-	right: 0;
 	list-style: none;
-	margin: 100px 0 0 0;
+	margin: 0;
 	padding: 0;
 }
 
@@ -69,5 +57,34 @@
 		&:hover, &:focus {
 			color: #fff;
 		}
+	}
+}
+
+.identity-inline {
+	padding: @gutter-size 0 0 0;
+	opacity: 0.7;
+	transition: opacity 0.3s;
+	&:hover, &:focus {
+		opacity: 1;
+	}
+	@media (min-width: @screen-tablet) {
+		padding: (@gutter-size * 2) 0 0 0;
+	}
+	.identity-left {
+		float: left;
+	}
+	.identity-right {
+		margin-left: 64px;
+	}
+	.identity-avatar {
+		width: 50px;
+		height: 50px;
+	}
+	.identity-name {
+		font-size: 20px;
+		margin: 0;
+	}
+	.identity-nickname {
+		font-size: 16px;
 	}
 }

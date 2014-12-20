@@ -10,9 +10,17 @@
 
 .post-title {
 	margin-top: 0;
+	text-decoration: none;
+}
+.post-title-a {
+	text-decoration: none;
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
 }
 
-.post {
+.post, .post-excerpt {
 	img {
 		display: block;
 		max-width: 100%;
@@ -21,6 +29,11 @@
 	}
 	a {
 		text-decoration: underline;
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: underline;
+		}
 	}
 }
 
