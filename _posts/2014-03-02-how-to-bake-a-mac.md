@@ -64,3 +64,7 @@ So here is the recipe for a home-baked MacBook Pro:
 
 
 **Why does it work?** Check out the [discussion on HackerNews](https://news.ycombinator.com/item?id=7371908).
+
+#MBP2011 is a [thing](https://mbp2011.org/?page=breakfree).
+
+**UPDATE**: Apple is now offering a [repair program](http://www.apple.com/uk/support/macbookpro-videoissues/).
