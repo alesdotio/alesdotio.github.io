@@ -1,4 +1,4 @@
 name: ales.io
 url: /
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
