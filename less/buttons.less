@@ -2,7 +2,7 @@
 	display: inline-block;
 	margin-bottom: 0;
 	font-family: @headings-font-family;
-	font-weight: 300;
+	font-weight: 400;
 	text-align: center;;
 	vertical-align: middle;
 	touch-action: manipulation;
@@ -13,25 +13,29 @@
 	white-space: nowrap;
 	outline: 0;
 	transition: color 0.2s, border-color 0.2s, background-color 0.2s;
-
-	padding: 6px 20px 8px;
-	font-size: @font-size-base;
-	line-height: @line-height-computed;
+	padding: 8px 20px 7px;
+	font-size: @font-size-medium;
+	text-transform: uppercase;
+	line-height: 26px;
 	border-radius: 5px;
 
-	border-color: #aaa;
-	color: #666;
+	border-color: @color-subtle-link;
+	color: @color-subtle-link;
 
 	&:hover,
 	&:focus {
-		border-color: #666;
-		color: #000;
+		border-color: darken(@color-subtle-link, 10%);
+		color: darken(@color-subtle-link, 10%);
 		text-decoration: none;
 	}
 
 	&:active {
 		background-image: none;
 	}
+}
+
+.btn > .fa-after {
+	margin-left: 5px;
 }
 
 .btn-block {

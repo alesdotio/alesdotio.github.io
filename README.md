@@ -10,7 +10,7 @@ Install requirements
 
 Run with
 
-    jekyll serve --watch
+    jekyll serve --watch --drafts
 
 Compile to CSS with
 

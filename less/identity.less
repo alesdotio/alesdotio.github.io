@@ -1,5 +1,6 @@
 .identity-name {
 	font-size: 42px;
+	text-shadow: @text-shadow;
 	margin: 0 0 @line-height-computed 0;
 	@media (min-width: @screen-tablet) {
 		font-size: 88px;
@@ -26,8 +27,9 @@
 }
 
 .identity-nickname {
-	margin: 0 0 (@line-height-computed / 2) 0;
+	margin: 0 0 5px 0;
 	font-size: 30px;
+	text-shadow: @text-shadow;
 	.identity-nickname-a {
 		color: #fff;
 		font-weight: 300;
@@ -35,8 +37,13 @@
 }
 
 .identity-profession {
+	font-family: @headings-font-family;
+	font-size: 20px;
+	font-weight: 300;
+	text-shadow: @text-shadow;
 	.identity-profession-a {
 		color: #fff;
+		font-weight: 400;
 	}
 }
 
@@ -62,7 +69,7 @@
 
 .identity-inline {
 	padding: @gutter-size 0 0 0;
-	opacity: 0.7;
+	opacity: 0.85;
 	transition: opacity 0.3s;
 	&:hover, &:focus {
 		opacity: 1;

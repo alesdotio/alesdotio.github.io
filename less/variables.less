@@ -3,24 +3,26 @@
 //
 
 @color-orange:           #e95b58;
-@color-blue:             #134c62;
-@color-blue-light:       lighten(@color-link, 20%);
+@color-blue:             #114e67;
+@color-blue-light:       #15728e;
 @color-green:            #288a08;
 
 @color-primary:          @color-blue;
-@color-bg:               #fff;
-@color-subtle:           #f6f6f6;
+@color-bg:               #f2f2f2;
+@color-subtle:           mix(@color-blue, #eaeaea, 2%);
+@color-subtle-link:      mix(@color-blue, #666, 5%);
 @color-border:           #e4e4e4;
-@color-text:             #555;
-@color-text-muted:       mix(#ddd, @color-primary, 50%);
+@color-text:             #373737;
+@color-text-muted:       mix(#eee, @color-primary, 50%);
 
 @color-link:             @color-primary;
 @color-link-hover:       @color-blue-light;
 
 
 @color-header-bg:        #22242f; //#2e2f35;
+@color-header-gradient:  #000;
 @color-header:           #fff;
-@color-header-text:      fade(#fff, 80%);
+@color-header-text:      #fff;
 
 
 
@@ -36,13 +38,13 @@
 @font-size-large:         24px;
 @font-size-medium:        16px;
 @font-size-small:         14px;
-@line-height-base:        1.666;
+@line-height-base:        1.76;
 @line-height-computed:    30px;
 
 @headings-font-family:    "Roboto Condensed", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 @headings-font-weight:    400;
 @headings-line-height:    1.2;
-@headings-color:          inherit;
+@headings-color:          #333;
 
 @font-size-h1:            42px;
 @font-size-h2:            36px;
@@ -50,6 +52,8 @@
 @font-size-h4:            24px;
 @font-size-h5:            22px;
 @font-size-h6:            18px;
+
+@text-shadow:             0 1px 1px rgba(0,0,0,0.5);
 
 
 //

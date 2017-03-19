@@ -9,7 +9,7 @@
 	display: inline-block;
 	font-family: @headings-font-family;
 	font-weight: 300;
-	color: #888;
+	color: @color-subtle-link;
 	margin: 0;
 }
 
@@ -26,9 +26,9 @@
 	.identity-connect-item {
 		font-size: 16px;
 		.identity-connect-item-a {
-			color: #ccc;
+			color: lighten(@color-subtle-link, 25%);
 			&:hover, &:focus {
-				color: #666;
+				color: @color-subtle-link;
 			}
 		}
 	}
@@ -41,8 +41,8 @@
 .footer-link-top {
 	display: inline-block;
 	margin: (@gutter-size * 3) 0 0 0;
-	color: #ccc;
+	color: lighten(@color-subtle-link, 25%);
 	&:hover, &:focus {
-		color: #666;
+		color: @color-subtle-link;
 	}
 }
