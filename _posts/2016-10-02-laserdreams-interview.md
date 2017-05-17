@@ -6,7 +6,7 @@ picture: "media/laserdreams-interview/laserdreams.jpg"
 ---
 
 
-*This is an interview for my mobile game Laser Dreams. I originally did it for the Cocos2d-x blog, an open-source mobile game engine. You can find the original blog post [here](http://localhost).*
+*This is an interview for my mobile game Laser Dreams. I originally did it for the Cocos2d-x blog, an open-source mobile game engine. You can find the original blog post [here](http://blog.cocos2d-x.org/2016/11/interview-with-the-developer-of-laser-dreams/).*
 
 **TL;DR: I made a mobile game. It's free. You can get here:**
 
