@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/favicon.png">
+	<link rel="apple-touch-icon" href="/favicon.png">
+
+	<title>My OSX Mavericks Setup for Django development - ales.io - @alesdotio - Aleš Kocjančič</title>
+	<meta name="description" content="Full stack web developer and entrepreneur.">
+	<meta name="keywords" content="">
+	<meta name="author" content="ales.io - @alesdotio - Aleš Kocjančič">
+	<meta property="og:title" content="My OSX Mavericks Setup for Django development - ales.io - @alesdotio - Aleš Kocjančič">
+	<meta property="og:description" content="Full stack web developer and entrepreneur.">
+	<meta property="og:image" content="/header.png">
+	<meta property="og:image:width" content="2000">
+	<meta property="og:image:height" content="860">
+	<meta property="og:type" content="website">
+
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-45398053-1', 'ales.io');
+	ga('send', 'pageview');
+</script>
+</head>
+<body>
+
+	<header style="background-image: url('/images/header.jpg')" class="min-h-[520px] bg-cover bg-center bg-no-repeat">
+		
+    <h1 class="text-white text-serif text-2xl">My OSX Mavericks Setup for Django development</h1>
+    <p class="text-white">Tue Jan 07 2014 01:00:00 GMT+0100 (Central European Standard Time)</p>
+
+	</header>
+
+
+<article class="">
+    <h1>My OSX Mavericks Setup for Django development</h1>
+    <p>I recently had to setup my machine for Python development from scratch. I had a couple of bookmarks of guides that run you through the process, but I soon found out they were pretty outdated. My <a href="http://blog.kristian.io/django/2013/10/23/setting-up-os-x-mavericks-for-python-development.html">co-founders blog post</a> was a good start, but I wanted to improve it a bit. So here goes.</p>
+<h1>Install OSX and enable FileVault</h1>
+<p>OSX installation is pretty straight forward. I did not fiddle with any advanced settings, except for region and keyboard configuration. Only suggestion I would have here is to use the US keyboard layout because special characters that are often used in programming are most easy to access (<code>;'\/.,[]{}()?=-+</code>). If you do occasionally need non-english characters, OSX has a really handy interface which is enabled when you hold down a key. Alternately, you can use multiple keyboards and switch with CTRL + SPACE.</p>
+<p>FireVault is in my opinion essential and is easily enabled in the Security section of System Preferences. Just make sure to use a strong login password that you can remember. If you happen to forget it, and you trust Apple, you can have a security backup of your encryption key stored on iCloud.</p>
+<h1>OSX configuration</h1>
+<h4>Enable apps from everywhere</h4>
+<p>By default, in OSX, some applications that you download from the Web cannot be run, since they do not originate from &quot;identified developers&quot;. If you want to disable this functionality go to Security and Privacy and set &quot;Allow apps downloaded from&quot; to &quot;Anywhere&quot;</p>
+<h4>Lock screen</h4>
+<p>If you work in an open office environment and are concerned about other people snooping your computer while you leave, you can get a handy lock screen shortcut on your task bar by opening Keychain Access, then going to Preferences and selecting &quot;Show Keychain status in menu bar&quot;. There is also a shortcut for it: CTRL + SHIFT + EJECT.</p>
+<h1>Must have software</h1>
+<ul>
+<li><a href="https://agilebits.com/onepassword">1Password</a> for password management</li>
+<li><a href="http://www.irradiatedsoftware.com/sizeup/">SizeUp</a> for quick window management</li>
+<li><a href="http://www.jetbrains.com/pycharm/">PyCharm</a></li>
+<li><a href="http://www.sublimetext.com/">Sublime Text</a> (use <code>ln -s &quot;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&quot; /usr/local/bin/subl</code> to enable the command line tool)</li>
+<li><a href="http://gitx.laullon.com/">GitX (L)</a> (command line tools are installable from the menu)</li>
+<li><a href="http://getcloudapp.com/">Cloud App</a> for instantly shareable screenshots</li>
+</ul>
+<h1>Terminal</h1>
+<p>While some people suggest to install <a href="http://www.iterm2.com/">iTerm2</a>, I prefer sticking to the default Terminal app. One small issue I had with it was the DELETE key not working as expected. It would type a tilde (~) instead of deleting forward. Luckily, the key is easily configurable in the app itself. Just go to Preferences, Keyboard and map the delete key to CTRL + Option + D. The action should show <code>\004</code>.</p>
+<h2>Oh My ZSH</h2>
+<p><a href="https://github.com/robbyrussell/oh-my-zsh">Oh My ZHS</a> enables use of advanced shell scripts. I use scripts by Kristian Oellegaard. More info can be found <a href="https://github.com/KristianOellegaard/zsh-plugins">here</a>.</p>
+<h2>Homebrew</h2>
+<p><a href="http://brew.sh/">Homebrew</a> is kinf-of like apt-get for Mac. It's a must. Install it with:</p>
+<p>ruby -e &quot;$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)&quot;</p>
+<h2>PostgreSQL</h2>
+<p>brew install postgresql</p>
+<p>To run postgres on startup:</p>
+<p>ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents</p>
+<h2>Install setuptools and PIP</h2>
+<p>Installing setuptools and PIP has changed a bit since the last time I did it. Best way to do it is to download the provided script and run it <a href="http://www.pip-installer.org/en/latest/installing.html">as described here</a>.</p>
+<h2>That's it!</h2>
+<p>Now you are pretty much ready to go. Not as hard as I remembered it to be. Happy programming!</p>
+
+</article>
+
+</body>
+</html>

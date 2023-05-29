@@ -1,17 +1,28 @@
-ales.io
-=======
+# ales.io
 
 http://ales.io
 
-Install requirements
 
-    sudo gem install jekyll
-    npm install
+## Install
 
-Run with
+```
+nvm use
+```
 
-    jekyll serve --watch --drafts
+```
+npm install
+```
 
-Compile to CSS with
 
-    grunt watch
+## Run locally
+
+```
+npm run start
+```
+
+
+## Build
+
+```
+npm run build
+```

@@ -1,0 +1,33 @@
+{% extends "base.njk" %}
+
+{% block header_content %}
+    <p class="text-white font-serif text-2xl">
+        Hi, 👋 <br/>
+        I'm Aleš, <br/>
+        a serial entrepreneur and <span title="The true full-stack developer should epitomize the essence of holistic
+        software artisanship, amalgamating diverse skills to craft effective solutions tackling real-world problems, from
+        beginning to end, fully.">full full-stack</span> developer with a love for design.
+    </p>
+    <p class="text-white text-lg">
+        Check out my <a href="{{ '/portfolio' | url }}">portfolio</a> for some projects I worked on <br/>
+        or read <a href="{{ '/blog/macbook' | url }}">how I baked my MacBook</a>.
+    </p>
+
+    {% set svg_class = "w-8 h-8 fill-white" %}
+    <a href="#" class="block">{% include 'icons/github.svg' %}</a>
+    <a href="#" class="block">{% include 'icons/linkedin.svg' %}</a>
+    <a href="#" class="block">{% include 'icons/twitter.svg' %}</a>
+    <a href="#" class="block">{% include 'icons/mail.svg' %}</a>
+{% endblock %}
+
+
+{% block content %}
+    <div class="container">
+        {% for post in collections.post | sort(attribute='data.date', reverse=true) %}
+            <article class="my-10">
+                <h2 class="text-2xl"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+                <p>{{ post.data.date }}</p>
+            </article>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.njk" %}
+
+
+{% block header_image %}{% if picture %}{{ picture }}{% else %}/images/header.jpg{% endif %}{% endblock %}
+
+{% block header_content %}
+    <h1 class="text-white text-serif text-2xl">{{ title }}</h1>
+    <p class="text-white">{{ date }}</p>
+{% endblock %}
+
+{% block content %}
+<article class="">
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+</article>
+{% endblock %}
