@@ -4,26 +4,30 @@
   "description": "http://ales.io",
   "main": "index.js",
   "scripts": {
-    "build:styles": "postcss src/styles/styles.scss -o _site/styles.css",
-    "watch:styles": "postcss src/styles/styles.scss -o _site/styles.css --watch",
-    "build:eleventy": "eleventy",
-    "watch:eleventy": "eleventy --serve",
-    "start:server": "node server.js",
-    "build": "npm-run-all --sequential build:styles build:eleventy",
-    "start": "npm-run-all --parallel watch:styles watch:eleventy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "NODE_ENV=production npm-run-all clean -p build:*",
+    "build:11ty": "eleventy --quiet",
+    "build:vite": "vite build",
+    "clean": "rm -rf dist",
+    "dev": "NODE_ENV=development npm-run-all -p dev:*",
+    "dev:11ty": "eleventy --quiet --serve",
+    "dev:vite": "vite"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ales Kocjancic",
   "license": "ISC",
+  "dependencies": {
+    "alpinejs": "^3.13.0"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "autoprefixer": "^10.4.14",
+    "@factorial/eleventy-plugin-twig": "^0.1.2",
+    "@tailwindcss/forms": "^0.5.6",
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.15",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.24",
-    "postcss-cli": "^10.1.0",
-    "postcss-nested": "^6.0.1",
-    "postcss-scss": "^4.0.6",
-    "tailwindcss": "^3.3.2"
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.3.3",
+    "twig": "^1.16.0",
+    "vite": "^4.4.9"
   }
 }

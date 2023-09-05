@@ -1,10 +1,13 @@
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/favicon.png");
-  eleventyConfig.addPassthroughCopy("src/**/*.(jpg|png|gif)");
+module.exports = (config) => {
+  config.addPassthroughCopy({ 'public': './' })
+  config.setBrowserSyncConfig({
+    files: ['dist/**/*'],
+    open: true,
+  })
   return {
     dir: {
-      input: "src",
-      output: "_site"
-    }
-  };
-};
+      input: 'src',
+      output: 'dist',
+    },
+  }
+}

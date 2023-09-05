@@ -1,0 +1,22 @@
+@layer components {
+	.container {
+		padding-left: theme('gap.gutter-half');
+		padding-right: theme('gap.gutter-half');
+		@media (min-width: theme('screens.sm')) {
+			padding: 0;
+			max-width: theme('container.max-width.sm');
+		}
+		@media (min-width: theme('screens.md')) {
+			max-width: theme('container.max-width.md');
+		}
+		@media (min-width: theme('screens.lg')) {
+			max-width: theme('container.max-width.lg');
+		}
+		@media (min-width: theme('screens.xl')) {
+			max-width: theme('container.max-width.xl');
+		}
+		@media (min-width: theme('screens.2xl')) {
+			max-width: theme('container.max-width.2xl');
+		}
+	}
+}

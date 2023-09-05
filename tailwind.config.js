@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/*.{html,njk,md}',
-    './src/**/*.{html,njk,md}',
+    './src/**/*.{html,njk,md,twig,svg}',
+  ],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
   ],
   theme: {
     // override ----------------------------------------------------
@@ -34,5 +37,4 @@ module.exports = {
       },
     }
   },
-  plugins: [],
 }

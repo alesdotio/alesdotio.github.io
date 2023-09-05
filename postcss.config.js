@@ -1,8 +1,8 @@
 module.exports = {
-  syntax: 'postcss-scss',
   plugins: [
-    require("tailwindcss/nesting"),
-    require('tailwindcss'),
+    require('postcss-import'),
+    require('tailwindcss/nesting'),
     require('autoprefixer'),
-  ]
+    require('tailwindcss'),
+  ],
 }

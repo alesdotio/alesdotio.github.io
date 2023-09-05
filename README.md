@@ -17,7 +17,7 @@ npm install
 ## Run locally
 
 ```
-npm run start
+npm run dev
 ```
 
 
@@ -25,4 +25,11 @@ npm run start
 
 ```
 npm run build
+```
+
+
+# Preview build
+
+```
+npm run build && npx serve dist
 ```

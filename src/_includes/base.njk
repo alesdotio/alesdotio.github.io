@@ -17,8 +17,14 @@
 	<meta property="og:image:height" content="860">
 	<meta property="og:type" content="website">
 
-	<link rel="stylesheet" type="text/css" href="/styles.css">
-	{% include "analytics.html" %}
+    {% if env.devMode %}
+        <script type="module" src="http://localhost:5173/@vite/client"></script>
+        <script type="module" src="http://localhost:5173/src/_scripts/_main.js"></script>
+        <link rel="stylesheet" href="http://localhost:5173/src/_styles/_main.pcss">
+    {% else %}
+        <link rel="stylesheet" href="/assets/_main.css">
+        <script src="/assets/_main.js" defer></script>
+    {% endif %}
 </head>
 <body>
 {% block header %}
