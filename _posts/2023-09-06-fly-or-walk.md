@@ -5,8 +5,6 @@ date: 2023-09-06
 picture: "media/fly-or-walk/plane.jpg"
 ---
 
-### The Plane Paradox
-
 There's an anecdote that stands out in the world of software development, one that echoes the differences between incremental progress and transformative leaps. It's a race: one participant walks, another takes a train, and the third, a plane. Their progress is a lesson in perspective.
 
 The walker makes consistent strides, moving forward little by little, much like the methodical approach of incremental software updates. The train traveler waits and then makes a relatively rapid journey, similar to software teams that release features in batches. But the individual who chooses the plane? First, they seem to go in the opposite direction, much like a developer considering an overhaul or refactoring of a codebase. Then there's the waiting, representing the time investment required for such an undertaking. Yet, once they take off, their progress is unparalleled.
