@@ -6,6 +6,9 @@
 	<title>{{ page.title }}</title>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="{{ site.url }}css/style.css">
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:type" content="article" />
+	{% if page.picture %}<meta property="og:image" content="{{ site.url }}{{ page.picture }}">{% endif %}
 	{% include analytics.html %}
 </head>
 <body>
